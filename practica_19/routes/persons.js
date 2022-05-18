@@ -1,8 +1,8 @@
 //Inyectar dependencias.
 const express = require('express');
 let router = express.Router();
-let mongoose = require('mongoose');
-let Person = require('../models/person.js');
+const mongoose = require('mongoose');
+const Person = require('../models/person.js');
 
 //Definir una ruta donde se imprimirá el objeto json.
 router.get('/persons', function(req, res, next){
